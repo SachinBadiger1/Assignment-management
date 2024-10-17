@@ -16,6 +16,5 @@ The **Assignment Management System** is a web-based application designed to faci
 
 - **Backend**: PHP
 - **Frontend**: HTML, CSS
-- **Database**: MySQL (or any other database if specified)
-- **Version Control**: Git
+- **Database**: MySQL 
 
