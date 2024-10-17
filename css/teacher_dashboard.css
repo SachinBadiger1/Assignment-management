@@ -1,0 +1,46 @@
+/* Reset some basic styles */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8; /* Light background */
+    color: #333; /* Dark text */
+}
+
+/* Dashboard container styles */
+.dashboard {
+    max-width: 600px; /* Reduce the width of the dashboard */
+    margin: 30px auto; /* Centering the dashboard */
+    padding: 15px; /* Reduce padding */
+    background-color: #ffffff; /* White background for the dashboard */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 24px; /* Smaller size of the main heading */
+    color: #007bff; /* Primary color for the heading */
+    margin-bottom: 10px; /* Reduce space below heading */
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 8px 15px; /* Reduce button padding */
+    margin: 5px 0; /* Less space between buttons */
+    font-size: 14px; /* Font size for buttons */
+    color: #fff; /* White text */
+    background-color: #007bff; /* Primary button color */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
