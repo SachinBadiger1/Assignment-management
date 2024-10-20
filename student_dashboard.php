@@ -4,9 +4,9 @@ session_start();
 
 // Database connection
 $servername = "localhost";
-$username = "root"; // replace with your database username
-$password = ""; // replace with your database password
-$dbname = "assignment_management"; // replace with your database name
+$username = "root"; 
+$password = ""; 
+$dbname = "assignment_management"; 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -15,18 +15,15 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Assuming the student ID is stored in the session upon login
-$student_id = $_SESSION['user_id']; // Replace with your session variable for student ID
+$student_id = $_SESSION['user_id']; 
 
 // Fetch student details
 $sql = "SELECT name FROM students WHERE id='$student_id'";
 $result = $conn->query($sql);
 $student_name = $result->fetch_assoc()['name'];
 
-// Get selected subject from the GET parameter (if available)
 $selected_subject = isset($_GET['subject']) ? $_GET['subject'] : null;
 
-// Get selected status filter from the GET parameter (if available)
 $status_filter = isset($_GET['status_filter']) ? $_GET['status_filter'] : 'all';
 
 // Fetch assignments for the student, filtered by subject if selected
