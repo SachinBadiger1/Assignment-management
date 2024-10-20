@@ -18,9 +18,8 @@ if (isset($_GET['submission_id'])) {
     $submission_id = $_GET['submission_id'];
 
     // Fetch the submitted file (BLOB)
-    $sql = "SELECT submitted_file FROM assignment_submissions WHERE submission_id=?";
+    $sql = "SELECT submitted_file FROM assignment_submissions WHERE submission_id=$submission_id";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param('i', $submission_id);
     $stmt->execute();
     $stmt->store_result();
     $stmt->bind_result($file);
