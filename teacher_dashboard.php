@@ -3,9 +3,9 @@ session_start();
 
 // Database connection
 $servername = "localhost";
-$username = "root"; // replace with your database username
-$password = ""; // replace with your database password
-$dbname = "assignment_management"; // replace with your database name
+$username = "root"; 
+$password = ""; 
+$dbname = "assignment_management"; 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -14,7 +14,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Assuming the teacher ID is stored in the session upon login
 $teacher_id = $_SESSION['user_id']; // Replace with your session variable for teacher ID
 
 // Fetch teacher details if needed
