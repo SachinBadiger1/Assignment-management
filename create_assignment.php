@@ -3,9 +3,9 @@ session_start();
 
 // Database connection
 $servername = "localhost";
-$username = "root"; // replace with your database username
-$password = ""; // replace with your database password
-$dbname = "assignment_management"; // replace with your database name
+$username = "root"; 
+$password = ""; 
+$dbname = "assignment_management"; 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -14,8 +14,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Assuming the teacher ID is stored in the session upon login
-$teacher_id = $_SESSION['user_id']; // Replace with your session variable for teacher ID
+$teacher_id = $_SESSION['user_id']; 
 
 // Fetch course_id for the logged-in teacher
 $sql_course = "SELECT course_id FROM teachers WHERE id = ?";
@@ -31,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $subject_name = $_POST['subject_name'];
     $description = $_POST['description'];
     $submission_date = $_POST['submission_date'];
-    $class_id = $_POST['class_id']; // Assuming this will come from radio button selection
+    $class_id = $_POST['class_id']; 
 
     // Get today's date for given_date
     $given_date = date('Y-m-d');
