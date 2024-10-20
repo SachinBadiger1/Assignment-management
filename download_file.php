@@ -3,9 +3,9 @@ session_start();
 
 // Database connection
 $servername = "localhost";
-$username = "root"; // replace with your database username
-$password = ""; // replace with your database password
-$dbname = "assignment_management"; // replace with your database name
+$username = "root"; 
+$password = ""; 
+$dbname = "assignment_management"; 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
