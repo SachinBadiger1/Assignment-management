@@ -3,9 +3,9 @@ session_start();
 
 // Database connection
 $servername = "localhost";
-$username = "root"; // replace with your database username
-$password = ""; // replace with your database password
-$dbname = "assignment_management"; // replace with your database name
+$username = "root"; 
+$password = ""; 
+$dbname = "assignment_management"; 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['assignment_file'])) {
                        SET submission_date='$submission_date', submitted_file=?, status='Submitted' 
                        WHERE assignment_id='$assignment_id' AND student_id='$student_id'";
         $stmt = $conn->prepare($sql_update);
-        $stmt->bind_param('b', $file_content); // 'b' indicates blob
+        $stmt->bind_param('b', $file_content);
         $stmt->send_long_data(0, $file_content);
         $stmt->execute();
     } else {
