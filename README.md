@@ -18,6 +18,11 @@ The **Assignment Management System** is a web-based application designed to faci
 - **Frontend**: HTML, CSS
 - **Database**: MySQL 
 
-## Live Website
+## Live Demo
 
-Link: 
+You can check out the live version of the project here: [Assignment Management Portal](http://assignment-management.42web.io)
+
+- **Student IDs:**: S101, S102
+- **Teacher IDs:**: T101,T102
+- **Common password:** 'a'
+
