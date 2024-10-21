@@ -7,7 +7,7 @@ You can check out the live version of the project here: [Assignment Management P
 - **Student IDs:** S101, S102
 - **Teacher IDs:** T101,T102
 - **Common password:** 'a'
-- 
+
 ## Overview
 
 The **Assignment Management System** is a web-based application designed to facilitate the management of assignments in educational settings. It allows teachers to create assignments, manage submissions, and review student work efficiently. This project is built using PHP and is structured to provide a seamless user experience for both teachers and students.
